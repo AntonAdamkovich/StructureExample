@@ -1,0 +1,4 @@
+export const FIRST_EXAMPLE = 'FIRST_EXAMPLE';
+export const SECOND_EXAMPLE = 'SECOND_EXAMPLE';
+export const THIRD_EXAMPLE = 'THIRD_EXAMPLE';
+export const LOADING = 'LOADING';
