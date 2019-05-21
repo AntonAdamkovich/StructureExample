@@ -4,13 +4,13 @@ import { StyleSheet, View } from 'react-native';
 import Button from '../../components/Button/Button';
 
 interface Props {
-  removeItemById(id: string): void;
+  logOut(): void;
 }
 
 export default function SecondExample(props: Props) {
   return (
     <View style={styles.container}>
-      <Button onPress={() => props.removeItemById('4')}>
+      <Button onPress={props.logOut}>
         PRESS ME
       </Button>
     </View>

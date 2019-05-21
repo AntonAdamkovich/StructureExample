@@ -32,12 +32,13 @@ function* logOutWorker() {
 
   // open modal with text 'everything is great'
   yield put(openModal());
-  //go to login
+  // can wait here to result actions of the modal or just continue
+  // go to login
   yield put(navigateToFirstExample());
 }
 
 function* logOutWatcher() {
-  yield takeEvery(secondExampleActionTypes.LOG_OUT_REQUEST, logOutWorker)
+  yield takeEvery(secondExampleActionTypes.LOG_OUT, logOutWorker)
 }
 
 export default function* () {

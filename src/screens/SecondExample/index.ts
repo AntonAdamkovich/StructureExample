@@ -2,10 +2,10 @@ import { connect } from 'react-redux';
 
 import SecondExample from './SecondExample';
 
-import { removeItemById } from '../../actionCreators/screens/secondExample';
+import { logOut } from '../../actionCreators/screens/secondExample';
 
 const mapDispatchToProps = {
-  removeItemById,
+  logOut,
 };
 
 export default connect(null, mapDispatchToProps)(SecondExample);
