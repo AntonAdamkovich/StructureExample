@@ -6,6 +6,8 @@ import initializeSaga from './initialize';
 // domains
 import { saga as userSaga } from '../domains/user';
 
+import secondExampleSaga from './screens/secondExample';
+
 export default function* rootSaga() {
   yield all([
     // generic
@@ -13,5 +15,8 @@ export default function* rootSaga() {
 
     // domains
     userSaga(),
+
+    // screens
+    secondExampleSaga()
   ]);
 }

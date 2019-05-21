@@ -4,13 +4,13 @@ import { StyleSheet, View } from 'react-native';
 import Button from '../../components/Button/Button';
 
 interface Props {
-  openBaseModal(): void;
+  removeItemById(id: string): void;
 }
 
 export default function SecondExample(props: Props) {
   return (
     <View style={styles.container}>
-      <Button onPress={props.openBaseModal}>
+      <Button onPress={() => props.removeItemById('4')}>
         PRESS ME
       </Button>
     </View>

@@ -20,8 +20,7 @@ export const RootNavigator = createSwitchNavigator({
     [STARTING]: {
       screen: startingFlow,
     }
-  },
-  {
+  }, {
     initialRouteName: STARTING,
   }
 );

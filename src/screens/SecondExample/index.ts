@@ -2,10 +2,10 @@ import { connect } from 'react-redux';
 
 import SecondExample from './SecondExample';
 
-import { openBaseModal } from '../../actionCreators/modals';
+import { removeItemById } from '../../actionCreators/screens/secondExample';
 
 const mapDispatchToProps = {
-  openBaseModal,
+  removeItemById,
 };
 
 export default connect(null, mapDispatchToProps)(SecondExample);

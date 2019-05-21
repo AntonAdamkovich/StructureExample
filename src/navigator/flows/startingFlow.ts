@@ -9,8 +9,7 @@ export default createStackNavigator(
     [LOADING]: {
       screen: LoadingScreen,
     },
-  },
-  {
+  }, {
     initialRouteName: LOADING,
     headerMode: 'none',
   }

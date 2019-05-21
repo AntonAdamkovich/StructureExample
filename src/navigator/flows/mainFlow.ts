@@ -13,8 +13,7 @@ export default createStackNavigator(
     [THIRD_EXAMPLE]: {
       screen: LoadingScreen,
     }
-  },
-  {
+  }, {
     initialRouteName: SECOND_EXAMPLE,
     headerMode: 'none',
   }

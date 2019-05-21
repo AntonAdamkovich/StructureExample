@@ -9,8 +9,7 @@ export default createStackNavigator(
     [FIRST_EXAMPLE]: {
       screen: FirstExample,
     }
-  },
-  {
+  }, {
     initialRouteName: FIRST_EXAMPLE,
     headerMode: 'none',
   }
